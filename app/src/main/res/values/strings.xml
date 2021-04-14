@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WhimFood</string>
+    <string name="todo">TODO</string>
+    <string name="email">Correo electrónico</string>
+    <string name="requiered_field">Campo requerido</string>
+    <string name="password">Contraseña</string>
+    <string name="login_butto_text">INGRESAR</string>
+</resources>
