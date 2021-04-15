@@ -62,6 +62,7 @@
         android:id="@+id/password_register_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
         app:helperText="@string/requiered_field"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -73,7 +74,8 @@
             android:id="@+id/password_register_input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password_register" />
+            android:hint="@string/password_register"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -81,6 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
+        app:endIconMode="password_toggle"
         app:helperText="@string/password_repeated"
         app:layout_constraintBottom_toBottomOf="parent"
         app:startIconDrawable="@drawable/ic_baseline_repeat_24"
@@ -90,7 +93,8 @@
             android:id="@+id/repeat_password_input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password_repeated" />
+            android:hint="@string/password_repeated"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
