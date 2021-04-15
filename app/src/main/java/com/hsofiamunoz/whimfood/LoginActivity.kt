@@ -16,10 +16,10 @@ class LoginActivity : AppCompatActivity() {
 
         // Cuando se oprime el boton de iniciat sesion, se cambia a Main activity
         loginBinding.loginButton.setOnClickListener {
-
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
 
         // Si se presiona el texto de Registrarse, se abre RegistroActivity
         loginBinding.registerLink.setOnClickListener{

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhimFood">
-        <activity android:name=".RegistroActivity" />
+
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity" >
             <intent-filter>
@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name=".MainActivity" />
+        <activity android:name=".RegistroActivity" />
 
     </application>
 

@@ -63,7 +63,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/register_text_link"
+        android:clickable="true"
         android:textAlignment="center"
-        android:textColor="#333131" />
+        android:textColor="#333131"
+        android:focusable="true" />
 
 </LinearLayout>
