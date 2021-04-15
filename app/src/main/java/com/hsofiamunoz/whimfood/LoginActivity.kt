@@ -21,9 +21,8 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         // Si se presiona el texto de Registrarse, se abre RegistroActivity
-        loginBinding.registerLink.setOnClickListener {
+        loginBinding.registerLink.setOnClickListener{
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }

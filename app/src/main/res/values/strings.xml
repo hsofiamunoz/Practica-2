@@ -6,4 +6,9 @@
     <string name="password">Contraseña</string>
     <string name="login_butto_text">INGRESAR</string>
     <string name="register_text_link">No tienes cuenta, Registrate aquí</string>
+    <string name="regieter_account_title">CREA UNA NUEVA CUENTA</string>
+    <string name="full_name">Nombre Completo</string>
+    <string name="password_register">Contraseña</string>
+    <string name="password_repeated">Repetir  Contraseña</string>
+    <string name="register_button_msm">Registrarse</string>
 </resources>
