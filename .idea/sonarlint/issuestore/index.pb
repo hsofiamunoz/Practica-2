@@ -1,0 +1,23 @@
+
+k
+;app/src/main/res/drawable/ic_baseline_account_circle_24.xml,d\2\d2af95d31a84790e1db0a544c4e43bfaf6075290
+l
+<app/src/main/res/drawable/ic_baseline_alternate_email_24.xml,5\b\5b87288e4627733c8ab665c3c8093e5b917b58d6
+a
+1app/src/main/res/drawable/ic_baseline_lock_24.xml,a\8\a8c251affc55e1464f9c1284de405d37bb719896
+c
+3app/src/main/res/drawable/ic_baseline_repeat_24.xml,4\5\454f1f985362bb6a71c40fd46e12c5684700c2bc
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+l
+<app/src/main/java/com/hsofiamunoz/whimfood/SplashActivity.kt,c\c\ccd0b76a5828ffec75a10dae69167a5a9eb5b74f
+j
+:app/src/main/java/com/hsofiamunoz/whimfood/MainActivity.kt,d\d\dda04a8426ca18140bd3205b35cdcc2f2abe233d
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+k
+;app/src/main/java/com/hsofiamunoz/whimfood/LoginActivity.kt,5\a\5af2eb3e4f7f7896f47ef0433eb58a3d46e575a8
+n
+>app/src/main/java/com/hsofiamunoz/whimfood/RegistroActivity.kt,9\d\9dc6a4f3998ff3f5af61a87201b408291272c9f8
