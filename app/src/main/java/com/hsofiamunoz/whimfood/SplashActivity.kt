@@ -10,6 +10,7 @@ import kotlin.concurrent.timerTask
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         this.supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
 
         setContentView(R.layout.activity_splash)
@@ -22,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToMainACtivity() {
-        val intent = Intent(this, SplashActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
     }

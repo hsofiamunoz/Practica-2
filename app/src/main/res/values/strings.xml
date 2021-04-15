@@ -5,4 +5,5 @@
     <string name="requiered_field">Campo requerido</string>
     <string name="password">Contraseña</string>
     <string name="login_butto_text">INGRESAR</string>
+    <string name="register_text_link">No tienes cuenta, Registrate aquí</string>
 </resources>
