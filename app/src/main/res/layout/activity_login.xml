@@ -68,4 +68,9 @@
         android:textColor="#333131"
         android:focusable="true" />
 
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

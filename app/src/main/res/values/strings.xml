@@ -11,4 +11,7 @@
     <string name="password_register">Contraseña</string>
     <string name="password_repeated">Repetir  Contraseña</string>
     <string name="register_button_msm">Registrarse</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="email_error">Ingresar correo electrónico</string>
+    <string name="login_error">Correo o contraseña invalidos</string>
 </resources>
