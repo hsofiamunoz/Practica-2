@@ -23,21 +23,25 @@ class LoginActivity : AppCompatActivity() {
             val email = loginBinding.emailInputText.text.toString()
             val password = loginBinding.passwordInputText.text.toString()
 
-            // Envio de datos a una actividad
-            intent.putExtra("email", loginBinding.emailInputText.text.toString())
-
-            startActivity(intent)
-            //finish()
-
+            // En el Login si la contraseña y el correo estan vacios se muestra un mensaje
+            if (email.isNotEmpty() && password.isNotEmpty()){
+                intent.putExtra("email", email)
+                intent.putExtra("password",password)
+                startActivity(intent)
+                finish()
+            }
+            else
+                Toast.makeText(this,getString(R.string.login_error), Toast.LENGTH_SHORT).show()
 
         }
 
 
+        // TODAVIA NO
         // Si se presiona el texto de Registrarse, se abre RegistroActivity
         loginBinding.registerLink.setOnClickListener{
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
-            finish()
+            //finish()
         }
 
 

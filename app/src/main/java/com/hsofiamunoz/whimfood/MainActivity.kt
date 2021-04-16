@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainBinding.root)
 
         var data = intent.extras
-        mainBinding.emailTextView.text = data?.getString("email")
+        mainBinding.emailTextView.text = data?.getString("email") + "  " + data?.getString("password")
 
 
     }

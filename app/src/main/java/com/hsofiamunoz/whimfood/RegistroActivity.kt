@@ -18,16 +18,19 @@ class RegistroActivity : AppCompatActivity() {
 
 
         registroBinding.registerButton.setOnClickListener {
-            // VAriables
+            // Variables
             val intent = Intent(this, LoginActivity::class.java)
             val name = registroBinding.fullnameRegisterInputText.text.toString()
             val email_register = registroBinding.emailRegisterInputText.text.toString()
-            val password = registroBinding.passwordRegisterInputText.text.toString()
-            val rep_password = registroBinding.repeatPasswordInputText.text.toString()
+            val password_register = registroBinding.passwordRegisterInputText.text.toString()
+            val rep_password_register = registroBinding.repeatPasswordInputText.text.toString()
 
-            startActivity(intent)
-            finish()
-
+            if (name.isNotEmpty() && email_register.isNotEmpty() && password_register.isNotEmpty() && rep_password_register.isNotEmpty()){
+                startActivity(intent)
+                finish()
+            }
+            else
+                Toast.makeText(this,"Ingresar parámetros faltantes",Toast.LENGTH_SHORT).show()
 
         }
 
