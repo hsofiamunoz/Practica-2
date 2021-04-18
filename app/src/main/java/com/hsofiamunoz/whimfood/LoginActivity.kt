@@ -27,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
 
             var data = intent.extras
             loginBinding.prueba.text = data?.getString("email_register") + "\n" + email
+
             // En el Login si la contraseña y el correo estan vacios se muestra un mensaje
             if (email.isNotEmpty() && password.isNotEmpty()){
                 //if (data_register?.getString("email_register") == email){
