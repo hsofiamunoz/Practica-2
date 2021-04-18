@@ -33,8 +33,6 @@ class LoginActivity : AppCompatActivity() {
                 //if (data_register?.getString("email_register") == email){
                     intent.putExtra("email", email)
                     intent.putExtra("password",password)
-
-
                     //startActivity(intent)
                     //finish()
                 //}
