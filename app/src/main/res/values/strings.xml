@@ -14,4 +14,5 @@
     <string name="logout">Cerrar sesión</string>
     <string name="email_error">Ingresar correo electrónico</string>
     <string name="login_error">Correo o contraseña invalidos</string>
+    <string name="password_error">Las constraseñas deben ser iguales</string>
 </resources>

@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         loginBinding.registerLink.setOnClickListener{
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
-            //finish()
+            finish()
         }
 
 

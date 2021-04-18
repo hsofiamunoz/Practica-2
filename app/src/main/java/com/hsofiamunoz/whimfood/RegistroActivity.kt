@@ -1,10 +1,9 @@
 package com.hsofiamunoz.whimfood
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.hsofiamunoz.whimfood.databinding.ActivityLoginBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.hsofiamunoz.whimfood.databinding.ActivityRegistroBinding
 
 class RegistroActivity : AppCompatActivity() {
@@ -26,8 +25,16 @@ class RegistroActivity : AppCompatActivity() {
             val rep_password_register = registroBinding.repeatPasswordInputText.text.toString()
 
             if (name.isNotEmpty() && email_register.isNotEmpty() && password_register.isNotEmpty() && rep_password_register.isNotEmpty()){
-                startActivity(intent)
-                finish()
+                if(password_register == rep_password_register){
+                    startActivity(intent)
+                    intent.putExtra("email_register",email_register)
+                    intent.putExtra("password_register",password_register)
+                    //finish()
+                }
+                else{
+                    Toast.makeText(this, getString(R.string.password_error),Toast.LENGTH_SHORT).show()
+                }
+
             }
             else
                 Toast.makeText(this,"Ingresar parámetros faltantes",Toast.LENGTH_SHORT).show()
