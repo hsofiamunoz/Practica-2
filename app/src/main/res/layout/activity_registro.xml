@@ -85,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
         app:endIconMode="password_toggle"
+        app:errorEnabled="true"
         app:helperText="@string/password_repeated"
         app:layout_constraintBottom_toBottomOf="parent"
         app:startIconDrawable="@drawable/ic_baseline_repeat_24"
@@ -111,10 +112,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.847" />
-
-    <TextView
-        android:id="@+id/textView2ueba_registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

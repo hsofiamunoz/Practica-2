@@ -21,8 +21,11 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
-        var data = intent.extras
+        val data = intent.extras
         mainBinding.emailTextView.text = data?.getString("email")
+
+        val password_login = data?.getString("password")
+
 
     }
 
@@ -36,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.logout_menu -> {
                 val  intent = Intent(this, LoginActivity::class.java)
+                intent.putExtra("email_login",mainBinding.emailTextView.text.toString())
+                //intent.putExtra("password_login",password_login)
                 startActivity(intent)
                 finish()
             }
