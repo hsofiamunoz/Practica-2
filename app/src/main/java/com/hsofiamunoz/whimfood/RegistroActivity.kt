@@ -19,6 +19,7 @@ class RegistroActivity : AppCompatActivity() {
         registroBinding.registerButton.setOnClickListener {
             // Variables
             val intent = Intent(this, LoginActivity::class.java)
+
             val name = registroBinding.fullnameRegisterInputText.text.toString()
             val email_register = registroBinding.emailRegisterInputText.text.toString()
             val password_register = registroBinding.passwordRegisterInputText.text.toString()
@@ -26,15 +27,14 @@ class RegistroActivity : AppCompatActivity() {
 
             if (name.isNotEmpty() && email_register.isNotEmpty() && password_register.isNotEmpty() && rep_password_register.isNotEmpty()){
                 if(password_register == rep_password_register){
-                    startActivity(intent)
+                    intent.putExtra("name",name)
                     intent.putExtra("email_register",email_register)
                     intent.putExtra("password_register",password_register)
-                    //finish()
+                    startActivity(intent)
+                    finish()
                 }
-                else{
+                else
                     Toast.makeText(this, getString(R.string.password_error),Toast.LENGTH_SHORT).show()
-                }
-
             }
             else
                 Toast.makeText(this,"Ingresar parámetros faltantes",Toast.LENGTH_SHORT).show()

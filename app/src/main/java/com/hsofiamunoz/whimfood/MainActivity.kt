@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         // Variables se crean en el ONCREATE
         // On create se encarga de cerrar la operacion por completo si presiono hacia atras <
         super.onCreate(savedInstanceState)
+
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
         var data = intent.extras
-        mainBinding.emailTextView.text = data?.getString("email") + "  " + data?.getString("password")
-
+        mainBinding.emailTextView.text = data?.getString("email")
 
     }
 

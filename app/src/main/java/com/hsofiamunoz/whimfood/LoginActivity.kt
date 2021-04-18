@@ -1,5 +1,6 @@
 package com.hsofiamunoz.whimfood
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -10,6 +11,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var  loginBinding: ActivityLoginBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         loginBinding = ActivityLoginBinding.inflate(layoutInflater)
@@ -23,20 +25,25 @@ class LoginActivity : AppCompatActivity() {
             val email = loginBinding.emailInputText.text.toString()
             val password = loginBinding.passwordInputText.text.toString()
 
+            var data = intent.extras
+            loginBinding.prueba.text = data?.getString("email_register") + "\n" + email
             // En el Login si la contraseña y el correo estan vacios se muestra un mensaje
             if (email.isNotEmpty() && password.isNotEmpty()){
-                intent.putExtra("email", email)
-                intent.putExtra("password",password)
-                startActivity(intent)
-                finish()
+                //if (data_register?.getString("email_register") == email){
+                    intent.putExtra("email", email)
+                    intent.putExtra("password",password)
+
+
+                    //startActivity(intent)
+                    //finish()
+                //}
+                //else
+                  //  Toast.makeText(this,"ERROR", Toast.LENGTH_SHORT).show()
             }
             else
                 Toast.makeText(this,getString(R.string.login_error), Toast.LENGTH_SHORT).show()
-
         }
 
-
-        // TODAVIA NO
         // Si se presiona el texto de Registrarse, se abre RegistroActivity
         loginBinding.registerLink.setOnClickListener{
             val intent = Intent(this, RegistroActivity::class.java)
