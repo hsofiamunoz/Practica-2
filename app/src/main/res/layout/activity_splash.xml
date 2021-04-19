@@ -12,6 +12,6 @@
         android:layout_width="0dp"
         android:layout_height="713dp"
         android:layout_weight="1"
-        app:srcCompat="@drawable/logo2"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/whimfood__2_" />
 </LinearLayout>

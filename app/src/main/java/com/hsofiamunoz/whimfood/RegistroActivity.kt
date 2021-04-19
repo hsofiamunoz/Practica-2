@@ -2,6 +2,7 @@ package com.hsofiamunoz.whimfood
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Html
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.hsofiamunoz.whimfood.databinding.ActivityRegistroBinding
@@ -11,9 +12,15 @@ class RegistroActivity : AppCompatActivity() {
     private lateinit var  registroBinding: ActivityRegistroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        supportActionBar!!.setIcon(R.mipmap.ic_launcher_round)
+        supportActionBar!!.title = Html.fromHtml("<font color=\"#1F177D\">" + getString(R.string.app_name) + "</font>")
+
         super.onCreate(savedInstanceState)
         registroBinding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(registroBinding.root)
+
+
 
         registroBinding.registerButton.setOnClickListener {
             // Variables

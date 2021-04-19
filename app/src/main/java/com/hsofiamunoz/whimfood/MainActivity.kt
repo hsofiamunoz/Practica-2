@@ -3,6 +3,7 @@ package com.hsofiamunoz.whimfood
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -13,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         // Variables se crean en el ONCREATE
         // On create se encarga de cerrar la operacion por completo si presiono hacia atras <
         super.onCreate(savedInstanceState)
@@ -21,15 +21,20 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        supportActionBar!!.setIcon(R.mipmap.ic_launcher_round)
+        supportActionBar!!.title = Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>")
+
+
         val data = intent.extras
         mainBinding.emailTextView.text = data?.getString("email")
 
-        val password_login = data?.getString("password")
+        val passwordLogin = data?.getString("password")
 
 
     }
 
-    // Funcion para cerrar la sesion
+    // Función para cerrar la sesion
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
         return true

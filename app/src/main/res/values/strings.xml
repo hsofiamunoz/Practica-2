@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WhimFood</string>
+    <string name="app_name">Whimfood</string>
     <string name="todo">TODO</string>
     <string name="email">Correo electrónico</string>
     <string name="requiered_field">Campo requerido</string>
@@ -15,4 +15,12 @@
     <string name="email_error">Ingresar correo electrónico</string>
     <string name="login_error">Correo o contraseña invalidos</string>
     <string name="password_error">Las constraseñas deben ser iguales</string>
+    <string name="login1">Iniciar sesión</string>
+    <string name="pas1">Las contraseñas deben ser iguales</string>
+    <string name="welcome">WELCOME TO YOUR FAVORITE PLACE</string>
+    <string name="register_text_link1">Registrate aquí</string>
+    <string name="cuenta">¿No tienes una cuenta aún?</string>
+    <string name="img">registro</string>
+    <string name="fullname1">Nombre de usuario</string>
+    <string name="PR">Repetir contraseña</string>
 </resources>
