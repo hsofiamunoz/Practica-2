@@ -1,6 +1,7 @@
 package com.hsofiamunoz.whimfood
 
 import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
 import android.os.Bundle
 import android.text.Html
 import android.widget.Toast
@@ -21,7 +22,6 @@ class RegistroActivity : AppCompatActivity() {
         setContentView(registroBinding.root)
 
 
-
         registroBinding.registerButton.setOnClickListener {
             // Variables
             val intent = Intent(this, LoginActivity::class.java)
@@ -32,19 +32,24 @@ class RegistroActivity : AppCompatActivity() {
 
             if (name.isNotEmpty() && email_register.isNotEmpty() && password_register.isNotEmpty() && rep_password_register.isNotEmpty()){
                 if(password_register == rep_password_register){
-                    registroBinding.repeatPasswordTextInputLayout.error = null
+                    if(password_register.length >=6){
+                        registroBinding.repeatPasswordTextInputLayout.error = null
+                        intent.putExtra("name", name)
+                        intent.putExtra("email_register",email_register)
+                        intent.putExtra("password_register",password_register)
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)
+                        startActivity(intent)
 
-                    intent.putExtra("name",name)
-                    intent.putExtra("email_register",email_register)
-                    intent.putExtra("password_register",password_register)
-                    startActivity(intent)
-                    finish()
+                    }
+                    else
+                        Toast.makeText(this,getString(R.string.password_digits), Toast.LENGTH_SHORT).show()
                 }
                 else
                     Toast.makeText(this, getString(R.string.password_error),Toast.LENGTH_SHORT).show()
             }
             else
-                Toast.makeText(this,"Ingresar parámetros faltantes",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.missing_parameters),Toast.LENGTH_SHORT).show()
+
 
         }
 

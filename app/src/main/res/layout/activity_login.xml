@@ -27,7 +27,7 @@
             android:id="@+id/email_input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/email"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,7 +44,7 @@
             android:id="@+id/password_input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/password"
             android:inputType="textPassword" />
 
@@ -82,19 +82,19 @@
         android:textStyle="italic" />
 
     <TextView
-        android:id="@+id/prueba"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="398dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
         android:text="@string/welcome"
         android:textAlignment="center"
         android:textColor="#1F177D"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

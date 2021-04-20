@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/fullname1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,6 +49,7 @@
         android:id="@+id/email_register__text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         app:helperText="@string/requiered_field"
         app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
 
@@ -57,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/email"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,6 +67,7 @@
         android:id="@+id/password_register_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         app:endIconMode="password_toggle"
         app:helperText="@string/requiered_field"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
@@ -76,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="0dp"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/password_register"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -85,6 +87,7 @@
         android:id="@+id/repeat_password_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         android:layout_marginBottom="0dp"
         app:endIconMode="password_toggle"
         app:errorEnabled="true"
@@ -96,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#BEBBDD"
+            android:background="@color/md_indigo_100"
             android:hint="@string/PR"
             android:inputType="textPassword" />
 

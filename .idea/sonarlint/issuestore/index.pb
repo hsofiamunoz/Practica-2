@@ -7,8 +7,6 @@ a
 1app/src/main/res/drawable/ic_baseline_lock_24.xml,a\8\a8c251affc55e1464f9c1284de405d37bb719896
 c
 3app/src/main/res/drawable/ic_baseline_repeat_24.xml,4\5\454f1f985362bb6a71c40fd46e12c5684700c2bc
-S
-#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 l
