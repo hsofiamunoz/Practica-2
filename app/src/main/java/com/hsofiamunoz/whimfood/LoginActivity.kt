@@ -56,14 +56,14 @@ class LoginActivity : AppCompatActivity() {
                 else{
                    // Ingresa despues de cerrar sesion
                     if (data?.getString("email_login") == email){
-                        //if(data?.getString("password_login")== password){
+                        if(data?.getString("password_login")== password){
                             intent.putExtra("email", email)
                             intent.putExtra("password",password)
                             startActivity(intent)
                             finish()
-                        //}
-                        //else
-                          //  Toast.makeText(this,getString(R.string.pas1),Toast.LENGTH_SHORT).show()
+                        }
+                        else
+                            Toast.makeText(this,getString(R.string.pas1),Toast.LENGTH_SHORT).show()
                     }
                     else
                        Toast.makeText(this, getString(R.string.login_error), Toast.LENGTH_SHORT).show()

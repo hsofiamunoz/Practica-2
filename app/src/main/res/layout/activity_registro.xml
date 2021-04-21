@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@color/md_indigo_100"
-            android:hint="@string/fullname1" />
+            android:hint="@string/fullname2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout

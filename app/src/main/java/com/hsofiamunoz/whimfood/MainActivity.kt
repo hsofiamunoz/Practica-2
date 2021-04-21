@@ -12,6 +12,8 @@ import com.hsofiamunoz.whimfood.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
+    private var email_login : String = " "
+    private var password_login : String = " "
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +26,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainBinding.root)
 
         val data = intent.extras
-        mainBinding.emailTextView.text = data?.getString("email")
+        email_login = data?.getString("email").toString()
+        password_login = data?.getString("password").toString()
+        mainBinding.emailTextView.text = email_login
     }
 
     // Función para cerrar la sesion
@@ -37,7 +41,8 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.logout_menu -> {
                 val  intent = Intent(this, LoginActivity::class.java)
-                intent.putExtra("email_login", mainBinding.emailTextView.text)
+                intent.putExtra("email_login", email_login)
+                intent.putExtra("password_login", password_login)
                 startActivity(intent)
                 finish()
             }
