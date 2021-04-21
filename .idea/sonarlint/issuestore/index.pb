@@ -19,3 +19,9 @@ k
 ;app/src/main/java/com/hsofiamunoz/whimfood/LoginActivity.kt,5\a\5af2eb3e4f7f7896f47ef0433eb58a3d46e575a8
 n
 >app/src/main/java/com/hsofiamunoz/whimfood/RegistroActivity.kt,9\d\9dc6a4f3998ff3f5af61a87201b408291272c9f8
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+@
+local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
+Q
+!.idea/dictionaries/WINDOWS_10.xml,d\8\d88422ae7cf8f49ddc25cd37eef6681d0a776b76

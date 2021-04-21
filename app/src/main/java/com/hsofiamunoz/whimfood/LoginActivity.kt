@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.hsofiamunoz.whimfood.databinding.ActivityLoginBinding
 
+
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var  loginBinding: ActivityLoginBinding
@@ -54,8 +56,7 @@ class LoginActivity : AppCompatActivity() {
                 else{
                    // Ingresa despues de cerrar sesion
                     if (data?.getString("email_login") == email){
-                        //if(data?.getString("password_log")== password){
-                            //loginBinding.prueba.text = data?.getString("password_log") + "  " + password
+                        //if(data?.getString("password_login")== password){
                             intent.putExtra("email", email)
                             intent.putExtra("password",password)
                             startActivity(intent)

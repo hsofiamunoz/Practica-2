@@ -8,10 +8,10 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.hsofiamunoz.whimfood.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainBinding.root)
 
         val data = intent.extras
-
-
         mainBinding.emailTextView.text = data?.getString("email")
     }
 
