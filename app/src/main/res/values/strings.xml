@@ -31,4 +31,9 @@
     <string name="spaes1">Parametros ingresados incorrectamente (Debe incluir letras, palabras o números)</string>
     <string name="spaces2">Llene los campos vacíos</string>
     <string name="spaces3">Llene los espacios en blanco</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_start_text_view">HOME o menu principal</string>
+    <string name="discover_start_text_view">DESCUBRIR</string>
+    <string name="account_text_view">CUENTA</string>
 </resources>

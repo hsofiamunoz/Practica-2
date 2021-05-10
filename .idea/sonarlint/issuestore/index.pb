@@ -25,3 +25,9 @@ S
 local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
 Q
 !.idea/dictionaries/WINDOWS_10.xml,d\8\d88422ae7cf8f49ddc25cd37eef6681d0a776b76
+o
+?app/src/main/java/com/hsofiamunoz/whimfood/HomeStartFragment.kt,4\7\47c4c84304f07ae633a32bf01ec4aac61c39c233
+n
+>app/src/main/java/com/hsofiamunoz/whimfood/DiscoverFragment.kt,4\f\4fd00527ec2ab6d55c6a9f20638b8cce0bb2d399
+m
+=app/src/main/java/com/hsofiamunoz/whimfood/AccountFragment.kt,b\a\bae9a60f85b0efbecc8c4a35030d32a8d4f76518
