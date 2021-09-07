@@ -75,6 +75,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
+        android:minHeight="48dp"
         android:text="@string/register_text_link1"
         android:textAlignment="center"
         android:textColor="#333131"
@@ -83,9 +84,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="398dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
         android:text="@string/welcome"
         android:textAlignment="center"
         android:textColor="#1F177D"
